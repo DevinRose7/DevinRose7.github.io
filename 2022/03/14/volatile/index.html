@@ -8,33 +8,33 @@
   <link rel="dns-prefetch" href="https://devinrose7.github.io">
   <title>Devin&#39;s blogs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="volatile存储器的层次结构：   CPU访问高速缓存或内存数据时间消耗，    从CPU到 大约需要的CPU周期 大约需要的时间    主存  约60-80ns   OPI总线传输（between sockets, not drawn）  约20ns   L3 cache 约40-45 cycles 约15ns   L2 cache 约10cycles 约3ns   L1 cache 约3-">
+  <meta name="description" content="volatilevolatile存储器的层次结构：   CPU访问高速缓存或内存数据时间消耗，    从CPU到 大约需要的CPU周期 大约需要的时间    主存  约60-80ns   OPI总线传输（between sockets, not drawn）  约20ns   L3 cache 约40-45 cycles 约15ns   L2 cache 约10cycles 约3ns   L1 c">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Devin&#39;s blogs">
 <meta property="og:url" content="https://devinrose7.github.io/2022/03/14/volatile/index.html">
 <meta property="og:site_name" content="Devin&#39;s blogs">
-<meta property="og:description" content="volatile存储器的层次结构：   CPU访问高速缓存或内存数据时间消耗，    从CPU到 大约需要的CPU周期 大约需要的时间    主存  约60-80ns   OPI总线传输（between sockets, not drawn）  约20ns   L3 cache 约40-45 cycles 约15ns   L2 cache 约10cycles 约3ns   L1 cache 约3-">
+<meta property="og:description" content="volatilevolatile存储器的层次结构：   CPU访问高速缓存或内存数据时间消耗，    从CPU到 大约需要的CPU周期 大约需要的时间    主存  约60-80ns   OPI总线传输（between sockets, not drawn）  约20ns   L3 cache 约40-45 cycles 约15ns   L2 cache 约10cycles 约3ns   L1 c">
 <meta property="og:locale">
-<meta property="og:image" content="c:/Users/Ten000hours">
-<meta property="og:image" content="c:/Users/Ten000hours">
-<meta property="og:image" content="c:/Users/Ten000hours">
-<meta property="og:image" content="c:/Users/Ten000hours">
-<meta property="og:image" content="c:/Users/Ten000hours">
-<meta property="og:image" content="c:/Users/Ten000hours">
-<meta property="og:image" content="c:/Users/Ten000hours">
-<meta property="og:image" content="c:/Users/Ten000hours">
-<meta property="og:image" content="c:/Users/Ten000hours">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/DevinRose7/PictureBed/image-20210907225707091.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/DevinRose7/PictureBed/image-20210907225836021.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/DevinRose7/PictureBed/image-20210907234247953.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/DevinRose7/PictureBed/image-20210907233820685.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/DevinRose7/PictureBed/image-20210908002519087.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/DevinRose7/PictureBed/image-20210908003031322.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/DevinRose7/PictureBed/image-20210908003227974.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/DevinRose7/PictureBed/image-20210908003550523.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/DevinRose7/PictureBed/image-20210908003704889.png">
 <meta property="article:published_time" content="2022-03-14T15:16:58.796Z">
-<meta property="article:modified_time" content="2021-09-07T16:40:34.182Z">
+<meta property="article:modified_time" content="2022-04-12T12:58:33.072Z">
 <meta property="article:author" content="Devin Rose">
 <meta property="article:tag" content="技术博客，阅读感悟">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="c:/Users/Ten000hours">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/DevinRose7/PictureBed/image-20210907225707091.png">
   
     <link rel="alternative" href="/atom.xml" title="Devin&#39;s blogs" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/img/ICU.png">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -61,7 +61,7 @@
 			<img src="https://tse1-mm.cn.bing.net/th/id/R-C.b3699d51f1f04de17be01f39d4a9616a?rik=1lm2ngr%2bbIyibA&amp;riu=http%3a%2f%2fimg.duoziwang.com%2f2019%2f07%2f10291453913911.jpg&amp;ehk=Lmi07Ri8ktUu5FasjPQ2HJohSOeEaLTexhKvySnBbDY%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0&amp;sres=1&amp;sresct=1" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/"></a></h1>
+		  <h1 class="header-author"><a href="/">Devin</a></h1>
 		</hgroup>
 		
 
@@ -119,7 +119,7 @@
 				<img src="https://tse1-mm.cn.bing.net/th/id/R-C.b3699d51f1f04de17be01f39d4a9616a?rik=1lm2ngr%2bbIyibA&amp;riu=http%3a%2f%2fimg.duoziwang.com%2f2019%2f07%2f10291453913911.jpg&amp;ehk=Lmi07Ri8ktUu5FasjPQ2HJohSOeEaLTexhKvySnBbDY%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0&amp;sres=1&amp;sresct=1" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author"></h1>
+			  <h1 class="header-author js-header-author">Devin</h1>
 			</hgroup>
 			
 			
@@ -170,9 +170,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="volatile"><a href="#volatile" class="headerlink" title="volatile"></a>volatile</h2><p>存储器的层次结构：</p>
-<p><img src="C:\Users\Ten000hours'\AppData\Roaming\Typora\typora-user-images\image-20210907225707091.png" alt="image-20210907225707091"></p>
-<p><img src="C:\Users\Ten000hours'\AppData\Roaming\Typora\typora-user-images\image-20210907225836021.png" alt="image-20210907225836021"></p>
+        <h1 id="volatile"><a href="#volatile" class="headerlink" title="volatile"></a>volatile</h1><h2 id="volatile-1"><a href="#volatile-1" class="headerlink" title="volatile"></a>volatile</h2><p>存储器的层次结构：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/DevinRose7/PictureBed/image-20210907225707091.png" alt="image-20210907225707091"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/DevinRose7/PictureBed/image-20210907225836021.png" alt="image-20210907225836021"></p>
 <p>CPU访问高速缓存或内存数据时间消耗，</p>
 <table>
 <thead>
@@ -214,20 +214,20 @@
 </tr>
 </tbody></table>
 <p>🐖:寄存器读取数据和从内存中读取数据，速度差异大概在100倍左右</p>
-<h4 id="CPU指令重排序"><a href="#CPU指令重排序" class="headerlink" title="CPU指令重排序"></a>CPU指令重排序</h4><p><img src="C:\Users\Ten000hours'\AppData\Roaming\Typora\typora-user-images\image-20210907234247953.png" alt="image-20210907234247953"></p>
+<h4 id="CPU指令重排序"><a href="#CPU指令重排序" class="headerlink" title="CPU指令重排序"></a>CPU指令重排序</h4><p><img src="https://cdn.jsdelivr.net/gh/DevinRose7/PictureBed/image-20210907234247953.png" alt="image-20210907234247953"></p>
 <p><strong>CPU指令之间不存在依赖关系时，指令可能会发生重排序</strong></p>
 <p>验证CPU重排序</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.devin.jmm;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 验证CPU指令重排序</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DisorderTest</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">0</span>, y = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">0</span>, b = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 如果不存在重排序，结果只能是以下几种情况</span></span><br><span class="line"><span class="comment">     * a=1, x=0, b=1, y=1</span></span><br><span class="line"><span class="comment">     * a=1, x=1, b=1, y=1</span></span><br><span class="line"><span class="comment">     * a=1, x=1, b=1, y=0</span></span><br><span class="line"><span class="comment">     * 不可能存在x=0, y=0的情况</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (;;) &#123;</span><br><span class="line">            i ++;</span><br><span class="line">            x = <span class="number">0</span>; y = <span class="number">0</span>;</span><br><span class="line">            a = <span class="number">0</span>; b = <span class="number">0</span>;</span><br><span class="line">            <span class="type">Thread</span> <span class="variable">one</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Thread</span>(() -&gt; &#123;</span><br><span class="line">                a = <span class="number">1</span>;</span><br><span class="line">                x = b;</span><br><span class="line">            &#125;);</span><br><span class="line"></span><br><span class="line">            <span class="type">Thread</span> <span class="variable">other</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Thread</span>(() -&gt; &#123;</span><br><span class="line">                b = <span class="number">1</span>;</span><br><span class="line">                y = a;</span><br><span class="line">            &#125;);</span><br><span class="line"></span><br><span class="line">            one.start(); other.start();</span><br><span class="line">            one.join(); other.join();</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (x == <span class="number">0</span> &amp;&amp; y == <span class="number">0</span>) &#123;</span><br><span class="line">                System.out.println(String.format(<span class="string">&quot;第%s次，出现重排序(x=%s, y=%s)&quot;</span>, i, x, y));</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\Ten000hours'\AppData\Roaming\Typora\typora-user-images\image-20210907233820685.png" alt="image-20210907233820685"></p>
-<h4 id="volatile-五层实现"><a href="#volatile-五层实现" class="headerlink" title="volatile 五层实现"></a>volatile 五层实现</h4><p><img src="C:\Users\Ten000hours'\AppData\Roaming\Typora\typora-user-images\image-20210908002519087.png" alt="image-20210908002519087"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/DevinRose7/PictureBed/image-20210907233820685.png" alt="image-20210907233820685"></p>
+<h4 id="volatile-五层实现"><a href="#volatile-五层实现" class="headerlink" title="volatile 五层实现"></a>volatile 五层实现</h4><p><img src="https://cdn.jsdelivr.net/gh/DevinRose7/PictureBed/image-20210908002519087.png" alt="image-20210908002519087"></p>
 <p>JVM内存屏障</p>
-<p><img src="C:\Users\Ten000hours'\AppData\Roaming\Typora\typora-user-images\image-20210908003031322.png" alt="image-20210908003031322"></p>
-<p><img src="C:\Users\Ten000hours'\AppData\Roaming\Typora\typora-user-images\image-20210908003227974.png" alt="image-20210908003227974"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/DevinRose7/PictureBed/image-20210908003031322.png" alt="image-20210908003031322"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/DevinRose7/PictureBed/image-20210908003227974.png" alt="image-20210908003227974"></p>
 <p>缓存一致性协议MESI</p>
-<p><img src="C:\Users\Ten000hours'\AppData\Roaming\Typora\typora-user-images\image-20210908003550523.png" alt="image-20210908003550523"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/DevinRose7/PictureBed/image-20210908003550523.png" alt="image-20210908003550523"></p>
 <p>linux上 CPU级别实现</p>
-<p><img src="C:\Users\Ten000hours'\AppData\Roaming\Typora\typora-user-images\image-20210908003704889.png" alt="image-20210908003704889"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/DevinRose7/PictureBed/image-20210908003704889.png" alt="image-20210908003704889"></p>
 <p>windows CPU使用lock 实现</p>
 
       
@@ -485,7 +485,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             </li>
           
             <li class="search-li">
-              <a href="https://time.geekbang.org/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>极客时间</a>
+              <a href="http://yuyy.info/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Yuyy</a>
             </li>
           
             <li class="search-li">
@@ -500,7 +500,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">Devin Rose&lt;br&gt;&lt;br&gt;这里还不知道写什么&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">不积跬步，无以至千里&lt;br&gt;&lt;br&gt;不积小流，无以成江海</div>
   	  	
     	</section>
     
